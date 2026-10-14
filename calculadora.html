@@ -1,48 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link rel="stylesheet" href="calculadora.css">
-</head>
-<body>
-    <header>
-
-    </header>
-        <div id="calculadora">
-            <input type="text" id="visor" class="visor" value="0" readonly/>
-            <br/>
-            <button id="" onclick="armazenarNumero()">AC</button>
-            <button id="" onclick="armazenarNumero()">()</button>
-            <button id="" onclick="armazenarNumero()">%</button>
-            <button id="" onclick="armazenarNumero()">/</button>
-            <br/>
-            <button id="num7" onclick="armazenarNumero('7')">7</button>
-            <button id="num8" onclick="armazenarNumero('8')">8</button>
-            <button id="num9" onclick="armazenarNumero('9')">9</button>
-            <button id="" onclick="armazenarNumero()">X</button>
-            <br/>
-            <button id="num4" onclick="armazenarNumero('4')">4</button>
-            <button id="num5" onclick="armazenarNumero('5')">5</button>
-            <button id="num6" onclick="armazenarNumero('6')">6</button>
-            <button id="" onclick="armazenarNumero()">-</button>
-            <br/>
-            <button id="num1" onclick="armazenarNumero('1')">1</button>
-            <button id="num2" onclick="armazenarNumero('2')">2</button>
-            <button id="num3" onclick="armazenarNumero('3')">3</button>
-            <button id="" onclick="armazenarNumero()">+</button>
-            <br/>
-            <button id="num0" onclick="armazenarNumero('0')">0</button>
-            <button id="" onclick="armazenarNumero()">.</button>
-            <button id="" onclick="armazenarNumero()">DEL</button>
-            <button id="" onclick="armazenarNumero()">=</button>
-            <br/>
-    </div>
+    <link rel="stylesheet" href="calculadora.css" />
+  </head>
+  <body>
+    <header></header>
+    <main id="calculadora">
+      <input type="text" id="visor" class="visor" readonly />
+      <br />
+      <button id="" onclick="armazenarNumero()">AC</button>
+      <button id="" onclick="armazenarNumero()">()</button>
+      <button id="" onclick="armazenarNumero()">%</button>
+      <button id="" onclick="armazenarNumero()">/</button>
+      <br />
+      <button id="num7" onclick="armazenarNumero('7')">7</button>
+      <button id="num8" onclick="armazenarNumero('8')">8</button>
+      <button id="num9" onclick="armazenarNumero('9')">9</button>
+      <button id="" onclick="armazenarNumero()">X</button>
+      <br />
+      <button id="num4" onclick="armazenarNumero('4')">4</button>
+      <button id="num5" onclick="armazenarNumero('5')">5</button>
+      <button id="num6" onclick="armazenarNumero('6')">6</button>
+      <button id="" onclick="armazenarNumero()">-</button>
+      <br />
+      <button id="num1" onclick="armazenarNumero('1')">1</button>
+      <button id="num2" onclick="armazenarNumero('2')">2</button>
+      <button id="num3" onclick="armazenarNumero('3')">3</button>
+      <button id="" onclick="somar()">+</button>
+      <br />
+      <button id="num0" onclick="armazenarNumero('0')">0</button>
+      <button id="" onclick="armazenarNumero()">.</button>
+      <button id="" onclick="armazenarNumero()">DEL</button>
+      <button id="" onclick="armazenarNumero()">=</button>
+      <br />
+      <div class="teste"></div>
+      <div class="teste1"></div>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="calculadora.js"></script>
-</body>
+  </body>
 </html>
