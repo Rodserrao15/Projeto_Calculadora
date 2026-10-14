@@ -15,7 +15,7 @@ let teste = document.querySelector(".teste");
 let teste1 = document.querySelector(".teste1");
 
 function armazenarNumero(p){
-    if(visor.value === 0){
+    if(visor.value.length === 0){
         valores.push(p);
     } else {
         let posicao = valores.length - 1
@@ -28,9 +28,48 @@ function somar(){
     if(visor.value.length !== 0 && visor.value.at(-1) !== " " ){
         visor.value += " + ";
         valores.push("");
-        if(operadores.length === 0){
+        if(operadores.at(-1) !== "+" && operadores.includes("+") === false){
             operadores.push("+");
         }
     }
     teste1.innerHTML = operadores
+}
+
+function subtrair(){
+    if(visor.value.length !== 0 && visor.value.at(-1) !== " " ){
+        visor.value += " - ";
+        valores.push("");
+        if(operadores.at(-1) !== "-" && operadores.includes("-") === false){
+            operadores.push("-");
+        }
+    }
+    teste1.innerHTML = operadores
+}
+
+function multiplicar(){
+    if(visor.value.length !== 0 && visor.value.at(-1) !== " " ){
+        visor.value += " x ";
+        valores.push("");
+        if(operadores.at(-1) !== "x" && operadores.includes("x") === false){
+            operadores.push("x");
+        }
+    }
+    teste1.innerHTML = operadores
+}
+
+function dividir(){
+    if(visor.value.length !== 0 && visor.value.at(-1) !== " " ){
+        visor.value += " / ";
+        valores.push("");
+        if(operadores.at(-1) !== "/" && operadores.includes("/") === false){
+            operadores.push("/");
+        }
+    }
+    teste1.innerHTML = operadores
+}
+
+function apagarTudo(){
+    visor.value = "";
+    valores = [];
+    operadores =[];
 }
