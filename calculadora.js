@@ -15,10 +15,14 @@ let teste = document.querySelector(".teste");
 let teste1 = document.querySelector(".teste1");
 
 function armazenarNumero(p){
-    let posicao = valores.length - 1
-    visor.value += p;
-    valores[posicao] += p
+    if(visor.value === 0){
+        valores.push(p);
+    } else {
+        let posicao = valores.length - 1
+        valores[posicao] += p;
+    }
     teste.innerHTML = valores
+    visor.value += p;
 }
 function somar(){
     if(visor.value.length !== 0 && visor.value.at(-1) !== " " ){
@@ -30,4 +34,3 @@ function somar(){
     }
     teste1.innerHTML = operadores
 }
-
