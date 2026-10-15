@@ -24,17 +24,17 @@ function armazenarNumero(p){
     teste.innerHTML = valores
     visor.value += p;
 }
-function somar(){
+function operador(o){
     if(visor.value.length !== 0 && visor.value.at(-1) !== " " ){
-        visor.value += " + ";
+        visor.value += o;
         valores.push("");
-        if(operadores.at(-1) !== "+" && operadores.includes("+") === false){
-            operadores.push("+");
+        if(operadores.at(-3) !== o && operadores.includes(o) === false){
+            operadores.push(o);
         }
     }
     teste1.innerHTML = operadores
 }
-
+/*
 function subtrair(){
     if(visor.value.length !== 0 && visor.value.at(-1) !== " " ){
         visor.value += " - ";
@@ -72,4 +72,5 @@ function apagarTudo(){
     visor.value = "";
     valores = [];
     operadores =[];
-}
+} */
+
